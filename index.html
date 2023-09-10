@@ -1,0 +1,229 @@
+<!-- 
+By Kiruthik Kumar
+Github- @rith1x
+VERSION 1.0
+DATE: 09-09-2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myself</title>
+  <!-- <link href="https://api.fontshare.com/v2/css?f[]=boska@700&display=swap" rel="stylesheet"> -->
+  <link href="https://api.fontshare.com/v2/css?f[]=literata@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo">
+      LOGO
+    </div>
+    <div class="options">
+      <a href="">About Us</a>
+      <a href="">Contact</a>
+      <a href="">Let's go</a>
+    </div>
+    <div class="options-m" style="display: none;">
+    </div>
+  </div>
+  <div class="cover-box">
+    <div class="cover-box-text">
+      <h1>Women empowerment of <span class="color">Myself</span>
+
+      </h1>
+      <h2>Readmore</h2>
+    </div>
+    <div class="cover-box-img">
+      <img src="i/2.svg" alt="">
+    </div>
+  </div>
+  <div class="full-wrap-msg">
+    <h1>"A woman with a hobby can turn it into a thriving business."</h1>
+  </div>
+  <div class="cards">
+    <div>
+      Empowerment
+    </div>
+    <div>
+      Opportunity
+    </div>
+    <div>
+      Creativity
+    </div>
+  </div>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gantari&display=swap');
+
+    :root {
+      --accent: #0047ab;
+      --font: 'Gantari', sans-serif;
+      ;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font);
+      font-size: 18px;
+    }
+
+    .nav {
+      position: fixed;
+      width: 100%;
+      color: var(--accent);
+      top: 0;
+      height: 60px;
+      background-color: #ffffff;
+      /* border: solid 1px #f00; */
+      display: flex;
+      padding-inline: 50px;
+      box-shadow: 0 0 10px 0 #ddd;
+      align-items: center;
+      justify-content: space-between;
+
+      && a {
+        text-decoration: none;
+        color: var(--accent);
+        padding-inline: 20px;
+        /* border: solid 1px #00f; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      && a::after {
+        content: '';
+        bottom: 0;
+        position: absolute;
+        width: 0;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent);
+        transition: all 0.3s ease-in-out;
+      }
+
+      && a:hover::after {
+        width: 100%;
+      }
+
+      && .options {
+        /* border: solid 1px #0f0; */
+        height: 100%;
+        gap: 10px;
+        display: flex;
+      }
+    }
+
+    .cover-box {
+      height: calc(100dvh - 60px);
+      /* border: solid 1px #0f0; */
+      width: 100%;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      && div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        && img {
+          height: 100%;
+          aspect-ratio: 1 / 1;
+          margin: 0 auto;
+          object-fit: cover;
+        }
+      }
+
+      && div:first-child {
+        padding: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        && h1 {
+          font-size: 5em;
+          font-weight: bolder;
+          padding-left: 30px;
+          border-left: var(--accent) solid 7px;
+          line-height: 1.2em;
+        }
+
+        && h2 {
+          margin-left: 37px;
+          border: solid 2px var(--accent);
+          padding: 10px 18px;
+          border-radius: 24px;
+          color: var(--accent);
+          font-size: 0.9em;
+          width: fit-content;
+          transition: all 0.2s ease-in-out;
+        }
+
+        && h2:hover {
+          background-color: var(--accent);
+          color: #ffffff;
+        }
+
+        && span.color {
+          background-image: linear-gradient(45deg, #ca61d8, #EE5166);
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          padding-right: 10px;
+          font-size: 1em;
+        }
+
+      }
+    }
+
+    .cover-box-text h1,
+    span {
+      font-family: 'literata', serif;
+
+    }
+
+    .full-wrap-msg {
+      width: 100%;
+      align-items: center;
+      position: relative;
+      padding: 50px;
+      margin: 50px 0;
+      justify-content: center;
+      background-color: transparent;
+      isolation: isolate;
+
+      && h1 {
+        font-size: 3em;
+        font-weight: bolder;
+        padding-left: 30px;
+        padding-block: 30px;
+        line-height: 1em;
+        color: #fff;
+      }
+    }
+
+    .full-wrap-msg::before {
+      width: 100%;
+      content: '';
+      background-color: #0047ab;
+      z-index: -1;
+      position: absolute;
+      transform: skewY(3deg);
+      inset: 0;
+    }
+
+    .cards {}
+  </style>
+</body>
+
+</html>
